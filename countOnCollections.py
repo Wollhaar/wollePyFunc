@@ -13,3 +13,8 @@ print("leer: ", countOnCollectionWithVal([7,7,7,7,2,5,3]))
 print("min: ", countOnCollectionWithVal([7,7,7,7,2,5,3], 'min'))
 print("low: ", countOnCollectionWithVal([7,7,7,7,2,5,3], 'low'))
 print("high: ", countOnCollectionWithVal([7,7,7,7,2,5,3], 'high'))
+
+# set script
+set1 = {'test1', 'test2'}
+print('Set-Output: ', set1, ', ', len(set1))
+
