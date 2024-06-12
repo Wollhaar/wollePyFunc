@@ -5,3 +5,9 @@ def is_passing(score):
 status = list(map(is_passing, exam_scores))
 
 print(status)
+
+
+numbers = [1, 2, 3]
+doubled = list(map(lambda x: x*2, numbers))
+
+print(doubled)
