@@ -10,8 +10,6 @@ def greet(name):
 print(greet("Bob"))
 
 
-def greet():
-    return "Welcome!"
 
 #takes a function as an argument
 def uppercase(func):
@@ -23,5 +21,28 @@ def uppercase(func):
         return modified_message
     return wrapper
 
+@uppercase
+def greet():
+    return "Welcome!"
+
 greet_upper = uppercase(greet)
 print(greet_upper())
+
+
+def stock_status_decorator(func):
+    def wrapper(item):
+        result = func(item)
+        print(result, ": stock status for", item)
+        return result
+    return wrapper
+
+@stock_status_decorator
+def restock_item(item):
+    return "Restocked"
+
+@stock_status_decorator
+def sell_item(item):
+    return "Sold"
+
+print(restock_item("Laptop"))
+print(sell_item("Smartphone"))
