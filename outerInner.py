@@ -46,3 +46,14 @@ def sell_item(item):
 
 print(restock_item("Laptop"))
 print(sell_item("Smartphone"))
+
+
+
+#It's  a good practice to use *args and **kwargs in the signature of a wrapper function
+# within a decorator. This approach ensures that the decorator is versatile and can be applied
+# to any function, regardless of the number and type of its arguments.
+
+# Code a wrapper function signature with args and kwargs
+# def some_decorator(func):
+#   def wrapper(*args, **kwargs):
+
