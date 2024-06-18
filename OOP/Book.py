@@ -2,6 +2,7 @@ class Book:
   def __init__(self, title, author):
     self.title = title
     self.author = author
+    self.__title_author = title + ' - ' + author
 
   #regular method
   def describe_book(self):
@@ -20,3 +21,4 @@ my_book.describe_book()
 
 # Using the class method to display information about the series
 Book.books_in_series("Harry Potter", 7)
+print(my_book._Book__title_author) # access private attribute | not recommended
